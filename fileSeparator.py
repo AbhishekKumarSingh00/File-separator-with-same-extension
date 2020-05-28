@@ -1,14 +1,8 @@
 import os 
 import shutil 
 
-# Write the name of the directory here, 
-# that needs to get sorted 
 path = input("Enter Floder Path: ")
-
-
-# This will create a properly organized 
-# list with all the filename that is 
-# there in the directory 
+ 
 list_ = os.listdir(path) 
 
 # This will go through each and every file 
@@ -17,8 +11,7 @@ for file_ in list_:
 
 	# This is going to store the extension type 
 	ext = ext[1:] 
-
-	# This forces the next iteration, 
+	
 	# if it is the directory 
 	if ext == '': 
 		continue
